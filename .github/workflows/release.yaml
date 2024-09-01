@@ -1,15 +1,3 @@
-name: Spider
-on:
-  workflow_dispatch:
-jobs:
-  build:
-    name: TVSpider
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ "ubuntu-latest" ]
-   
       - name: Build JS Config
         run: |
           cp -r ./tmp ./code
